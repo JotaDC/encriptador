@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <section class="header__logo">
+            <p class="header_logo">a</p>
+        </section>
+
+    </header>
+    <main class="presentacion">
+
+        <section class="presentacion__contenido">
+
+            <textarea id="texto" class="presentacion__contenido__inputTexto"
+                placeholder="Ingrese texto aquí"></textarea>
+            <p class="presentacion__contenido__comentario">! Solo minuscula y sin acentos</p>
+            <div class="presentacion__enlaces">
+
+                <a onclick="encriptarTexto();" class="presentacion__enlaces__link" href="#">
+                    Encriptar
+                </a>
+                <a onclick="desencriptarTexto();" class="presentacion__enlaces__link" href="#">
+                    Desencriptar
+                </a>
+
+            </div>
+        </section>
+        <section class="presentacion__resultado">
+
+            <textarea style="display:none;" id="resultado" class="presentacion__resultado__inputResultado"
+                placeholder=""></textarea>
+            <a onclick="copiar();" style="display:none;" id="copiar" class="presentacion__enlaces__link" href="#">
+                Copiar
+            </a>
+            <div id="mensajeinicial" class="presentacion__resultado__mensajeinicial">
+                <img id="imagen" class="presentacion__resultado__imagen" src="./assets/detective-futurista.jpg" />
+                <p id="informacion" class="presentacion__resultado__informacion">Níngun mensaje fue encontrado</p>
+                <p id="comentario" class="presentacion__resultado__comentario">Ingresa el texto que desees encriptar o
+                    desencriptar.</p>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <p class="footer__texto">Realizado por Javier Cañete</p>
+        <a href="https://github.com/JotaDC" target="_blank"><img class="footer__imagen" src="./assets/github-icon.png" /></a>
+    </footer>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
