@@ -23,7 +23,7 @@
         <section class="presentacion__contenido">
 
             <textarea id="texto" class="presentacion__contenido__inputTexto"
-                placeholder="Ingrese texto aquí"></textarea>
+                placeholder="Ingrese texto aquí" oninput="this.value = this.value.replace(/[^a-z\s]/g, '')"></textarea>
             <p class="presentacion__contenido__comentario">! Solo minuscula y sin acentos</p>
             <div class="presentacion__enlaces">
 
